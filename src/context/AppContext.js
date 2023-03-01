@@ -8,6 +8,7 @@ export const AppReducer = (state, action) => {
             state.expenses.map(expense => {
                 if(expense.name === action.payload.name) {
                     expense.quantity = expense.quantity
+                    updatedqty = true;
                 }
                 expense.quantity = expense.quantity;
                 new_expenses.push(expense);
